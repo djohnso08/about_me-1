@@ -1,4 +1,5 @@
 'use strict';
+// Try not to change user input directly. Manipulate the variable data as needed.
 var hasDegree = prompt('Do You Think I Have A College Degree?').toLowerCase();
 console.log(hasDegree);
 if (hasDegree === 'y' || hasDegree === 'yes') {alert('That Is Correct, I Have An Edumacation');
