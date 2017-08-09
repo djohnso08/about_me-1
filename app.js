@@ -1,34 +1,34 @@
 'use strict';
-var hasDegree = prompt('Do you think I have a college degree?').toLowerCase();
+var hasDegree = prompt('Do You Think I Have A College Degree?').toLowerCase();
 console.log(hasDegree);
-if (hasDegree === 'y' || 'yes') {alert('That is correct, I have an edumacation');
+if (hasDegree === 'y' || 'yes') {alert('That Is Correct, I Have An Edumacation');
 }else {alert('BZZZZZZT WRONG!, Move Along.');
 
 }
-var isFather = prompt('Am I a father?').toLowerCase();
+var isFather = prompt('Am I A Father?').toLowerCase();
 console.log(isFather);
 if (isFather === 'y' || 'yes') {alert('*Darth Vader Voice* Corrrect...');
 
-}else {alert('Luuuke I am a father.');
+}else {alert('Luuuke I Am A Father.');
 
 }
 
 var militaryService = prompt('Did I serve in the U.S. Military?').toLowerCase();
 console.log(militaryService);
-if (militaryService === 'y' || 'yes') {alert('AFFIRM! I served in the Air Force.');
-}else {alert('Big ole Negatory');
+if (militaryService === 'y' || 'yes') {alert('AFFIRM! I Served In The Air Force.');
+}else {alert('Big Ole Negatory, HUA!');
 
 }
-var livedHawaii = prompt('Did I ever live in Hawaii?').toLowerCase();
+var livedHawaii = prompt('Did I Ever Live In Hawaii?').toLowerCase();
 console.log(livedHawaii);
-if (livedHawaii === 'y' || 'yes') {alert('Aloha! That is correct, I even speak Hawaiian Creole')
+if (livedHawaii === 'y' || 'yes') {alert('Aloha! That Is Correct, I Even Speak Hawaiian Creole')
 }else {alert('As a matter of fact, I grew up there.')
 
 }
 var challengeAccepted = prompt('From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?').toLowerCase();
 console.log(challengeAccepted);
-if (challengeAccepted === 'y' || 'yes') {
+if (challengeAccepted === 'y' || 'yes') {alert('I Think I Can, I Think I Can...I Know I Can.')
 
-}else {
+}else {alert('Oh Thee Of So Little Faith...')
 
 }
