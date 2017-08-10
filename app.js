@@ -39,16 +39,19 @@ function isFatherFunction() {
 }
 isFatherFunction();
 
-var militaryService = prompt(userName + ' Do You Think I Served in the U.S. Military?');
-console.log(militaryService);
-if (militaryService.toLowerCase() === 'y' || militaryService.toLowerCase() === 'yes') {
-  alert('AFFIRM! I Served In The Air Force.');
-  myScore++;
-}else if (militaryService.toLowerCase() === 'n' || militaryService.toLowerCase() === 'no') {
-  alert('Big Ole Negatory, HUA!');
-}else {
-  alert('Answer Input Is Invalid');
+function militaryServiceFunction() {
+  var militaryService = prompt(userName + ' Do You Think I Served in the U.S. Military?');
+  console.log(militaryService);
+  if (militaryService.toLowerCase() === 'y' || militaryService.toLowerCase() === 'yes') {
+    alert('AFFIRM! I Served In The Air Force.');
+    myScore++;
+  }else if (militaryService.toLowerCase() === 'n' || militaryService.toLowerCase() === 'no') {
+    alert('Big Ole Negatory, HUA!');
+  }else {
+    alert('Answer Input Is Invalid');
+  }
 }
+militaryServiceFunction();
 
 var livedHawaii = prompt('Did I Ever Live In Hawaii?');
 console.log(livedHawaii);
