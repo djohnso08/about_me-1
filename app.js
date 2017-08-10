@@ -63,20 +63,30 @@ if (challengeAccepted === 'y' || challengeAccepted === 'yes') {
   alert('Answer Input Is Invalid');
 }
 
-var placesLived = prompt ('How Many Places Do You Think I Have Lived Besides Hawaii? You Have Four Guesses.');
+var placesLived = prompt ('Hey There!' + userName + ' How Many Places Do You Think I Have Lived Besides Hawaii? You Have Four Guesses.');
 for (var i = 0; i < 4; i++) {
   if (parseInt(placesLived) === 5) {
     alert('It is True, I Have Moved A Lot.');
     myScore++;
     break;
-  }
-  else if (parseInt(placesLived) < 5) {
+  }else if (parseInt(placesLived) < 5) {
     placesLived = prompt('I Have Lived In More Places, Please Try Again.');
-  }
-  else if (parseInt(placesLived) > 5) {
+  }else if (parseInt(placesLived) > 5) {
     placesLived = prompt('WHOOOAAAAA....Slow Your Roll, Less Places Than That. Please Try Again.');
   }else {
     alert('You Ran Out Of Tries, Dont Feel Too Bad I am A Complicated Person.');
   }
 }
+
 // 6 guesses for an array of answers then alert of the possible answers if they guessed right or wrong.
+var bestVideoGames = ['skyrim', 'fallout', 'zelda', 'world of warcraft', 'wow', 'eve' ];
+var userVideoGamePick = prompt('Oh.. hey!' + userName + ' What Do You Think Is One Of The Best Video Games? You Have 6 Do Overs, Before Game Over!');
+for (var j = 0; j < 6; j++) {
+  if (bestVideoGames.includes(userVideoGamePick.toLowerCase())) {
+    alert('CORRECT! You Should Send A Friend Invite On Steam. By The Way I Kept Score.');
+    myScore++;
+    break;
+  // }else if (bestVideoGames.excludes(userVideoGamePick.toLowerCase())) {
+  //   userVideoGamePick = prompt('Hey Dont Feel Bad Thats Why I Gave You 6 Lives.');
+  // }
+}
