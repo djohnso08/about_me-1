@@ -1,18 +1,19 @@
 'use strict';
 
 var myScore = 0;
-
+var user = '';
 function userNameFunction() {
   var userName = prompt ('Please Enter Your Name!');
   console.log(userName);
   if (userName === true) {
     alert('Thanks ' + userName + ', Let us begin. It is relatively painless.');
+    user = userName;
   }
 }
 userNameFunction();
 
 function hasDegreeFunction() {
-  var hasDegree = prompt(userName + ' Do You Think I Have A College Degree?');
+  var hasDegree = prompt(user + ' Do You Think I Have A College Degree?');
   console.log(hasDegree);
   if (hasDegree.toLowerCase() === 'y' || hasDegree.toLowerCase() === 'yes') {
     alert('That Is Correct, I Have An Edumacation');
@@ -26,13 +27,13 @@ function hasDegreeFunction() {
 hasDegreeFunction();
 
 function isFatherFunction() {
-  var isFather = prompt(userName + ' Do You Think Am I A Father?');
+  var isFather = prompt(user + ' Do You Think Am I A Father?');
   console.log(isFather);
   if (isFather.toLowerCase() === 'y' || isFather.toLowerCase() === 'yes') {
     alert('*Darth Vader Voice* Corrrect...');
     myScore++;
   }else if (isFather.toLowerCase() === 'n' || isFather.toLowerCase() === 'no') {
-    alert('*Darth Vader Voice* ' + userName + ' I mean... Luuuke I Am A Father... I Do Have A Kid.');
+    alert('*Darth Vader Voice* ' + user + ' I mean... Luuuke I Am A Father... I Do Have A Kid.');
   }else {
     alert('Answer Input Is Invalid');
   }
@@ -40,7 +41,7 @@ function isFatherFunction() {
 isFatherFunction();
 
 function militaryServiceFunction() {
-  var militaryService = prompt(userName + ' Do You Think I Served in the U.S. Military?');
+  var militaryService = prompt(user + ' Do You Think I Served in the U.S. Military?');
   console.log(militaryService);
   if (militaryService.toLowerCase() === 'y' || militaryService.toLowerCase() === 'yes') {
     alert('AFFIRM! I Served In The Air Force.');
@@ -57,7 +58,7 @@ function livedHawaiiFunction() {
   var livedHawaii = prompt('Did I Ever Live In Hawaii?');
   console.log(livedHawaii);
   if (livedHawaii.toLowerCase() === 'y' || livedHawaii.toLowerCase() === 'yes') {
-    alert('Aloha! ' + userName + ' That Is Correct, I Even Speak Hawaiian Creole');
+    alert('Aloha! ' + user + ' That Is Correct, I Even Speak Hawaiian Creole');
     myScore++;
   }else if (livedHawaii.toLowerCase() === 'n' || livedHawaii.toLowerCase() === 'no') {
     alert('As a matter of fact, I grew up there.');
@@ -68,7 +69,7 @@ function livedHawaiiFunction() {
 livedHawaiiFunction();
 
 function challengeAcceptedFunction() {
-  var challengeAccepted = prompt(userName + ' From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?');
+  var challengeAccepted = prompt(user + ' From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?');
   console.log(challengeAccepted);
   if (challengeAccepted === 'y' || challengeAccepted === 'yes') {
     alert('I Think I Can, I Think I Can...I Know I Can.');
@@ -82,7 +83,7 @@ function challengeAcceptedFunction() {
 challengeAcceptedFunction();
 
 function placesLivedFunction() {
-  var placesLived = prompt ('Hey There! ' + userName + ' How Many Places Do You Think I Have Lived Besides Hawaii? You Have Four Guesses.');
+  var placesLived = prompt ('Hey There! ' + user + ' How Many Places Do You Think I Have Lived Besides Hawaii? You Have Four Guesses.');
   console.log(placesLived);
   for (var i = 0; i < 4; i++) {
     if (parseInt(placesLived) === 5) {
@@ -103,7 +104,7 @@ placesLivedFunction();
 function bestVideoGamesFunction() {
   var bestVideoGames = ['skyrim', 'fallout', 'zelda', 'world of warcraft', 'wow', 'eve' ];
   var videoGamesPrint = bestVideoGames.join(', ');
-  var userVideoGamePick = prompt('Oh.. hey! ' + userName + ' What Do You Think Is One Of The Best Video Games? You Have 6 Do Overs Before Game Over!');
+  var userVideoGamePick = prompt('Oh.. hey! ' + user + ' What Do You Think Is One Of The Best Video Games? You Have 6 Do Overs Before Game Over!');
   console.log(userVideoGamePick);
   for (var j = 0; j < 6; j++) {
     if (bestVideoGames.includes(userVideoGamePick.toLowerCase())) {
