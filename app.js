@@ -25,16 +25,19 @@ function hasDegreeFunction() {
 }
 hasDegreeFunction();
 
-var isFather = prompt(userName + ' Do You Think Am I A Father?');
-console.log(isFather);
-if (isFather.toLowerCase() === 'y' || isFather.toLowerCase() === 'yes') {
-  alert('*Darth Vader Voice* Corrrect...');
-  myScore++;
-}else if (isFather.toLowerCase() === 'n' || isFather.toLowerCase() === 'no') {
-  alert('*Darth Vader Voice* ' + userName + ' I mean... Luuuke I Am A Father... I Do Have A Kid.');
-}else {
-  alert('Answer Input Is Invalid');
+function isFatherFunction() {
+  var isFather = prompt(userName + ' Do You Think Am I A Father?');
+  console.log(isFather);
+  if (isFather.toLowerCase() === 'y' || isFather.toLowerCase() === 'yes') {
+    alert('*Darth Vader Voice* Corrrect...');
+    myScore++;
+  }else if (isFather.toLowerCase() === 'n' || isFather.toLowerCase() === 'no') {
+    alert('*Darth Vader Voice* ' + userName + ' I mean... Luuuke I Am A Father... I Do Have A Kid.');
+  }else {
+    alert('Answer Input Is Invalid');
+  }
 }
+isFatherFunction();
 
 var militaryService = prompt(userName + ' Do You Think I Served in the U.S. Military?');
 console.log(militaryService);
