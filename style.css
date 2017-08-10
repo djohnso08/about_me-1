@@ -2,27 +2,35 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-#skills-list {
-  width: 50%;
-}
+html {background-image: url(http://wallpapercave.com/wp/JsyIAS0.jpg);}
 .skills {
   text-decoration: underline;
-  color: red;
+  color: #d60e0e;
 }
 .lived {
   margin: auto;
-}
-#lived-list {
-  width: 50%;
+  color: blue;
 }
 #title-me {
+  font-size: 150%
+  color: #d60e0e;
   border-style: solid;
   border-radius: 1px;
   text-align: center;
 }
+#skills-list {
+  width: 50%;
+}
+#lived-list {
+  width: 50%;
+}
 #image-one {
+
   text-align: center;
   border-style: solid;
   border-radius: 3px;
   width: 25%;
+}
+#top-ten-list{
+  color:#d60e0e
 }

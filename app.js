@@ -64,6 +64,7 @@ if (challengeAccepted === 'y' || challengeAccepted === 'yes') {
 }
 
 var placesLived = prompt ('Hey There! ' + userName + ' How Many Places Do You Think I Have Lived Besides Hawaii? You Have Four Guesses.');
+console.log(placesLived);
 for (var i = 0; i < 4; i++) {
   if (parseInt(placesLived) === 5) {
     alert('It is True, I Have Moved A Lot.');
@@ -71,28 +72,26 @@ for (var i = 0; i < 4; i++) {
     break;
   }else if (parseInt(placesLived) < 5) {
     placesLived = prompt('I Have Lived In More Places, Please Try Again.');
-    continue;
   }else if (parseInt(placesLived) > 5) {
     placesLived = prompt('WHOOOAAAAA....Slow Your Roll, Less Places Than That. Please Try Again.');
-    continue;
   }else {
     alert('You Ran Out Of Tries, Dont Feel Too Bad I am A Complicated Person.');
   }
 }
 
 var bestVideoGames = ['skyrim', 'fallout', 'zelda', 'world of warcraft', 'wow', 'eve' ];
+var videoGamesPrint = bestVideoGames.join(', ');
 var userVideoGamePick = prompt('Oh.. hey! ' + userName + ' What Do You Think Is One Of The Best Video Games? You Have 6 Do Overs Before Game Over!');
+console.log(userVideoGamePick);
 for (var j = 0; j < 6; j++) {
   if (bestVideoGames.includes(userVideoGamePick.toLowerCase())) {
-    alert('CORRECT! You Should Send A Friend Invite On Steam. By The Way I Kept Score.');
+    alert('CORRECT! You Should Send A Friend Invite On Steam. By The Way I Kept Score. Your Options were ' + videoGamesPrint);
     myScore++;
     break;
   }else if (bestVideoGames.includes(userVideoGamePick.toLowerCase()) === false) {
     userVideoGamePick = prompt('Hey Dont Feel Bad Thats Why I Gave You 6 Lives.');
-  }else {
-    alert('GAME OVER');
-    break;
+  }else if (j === 6){
+    alert('GAME OVER' + videoGamesPrint + 'Were Your Options. Your Total Score Is ' + myScore);
   }
 }
-alert(bestVideoGames.toString());
-alert('Your Score Is... ' + myScore);
+alert('Your High Score Is... ' + myScore);
