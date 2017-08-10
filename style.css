@@ -2,35 +2,44 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-html {background-image: url(http://wallpapercave.com/wp/JsyIAS0.jpg);}
-.skills {
-  text-decoration: underline;
-  color: #d60e0e;
+html {
+  background-image: url(http://wallpapercave.com/wp/JsyIAS0.jpg);}
+  .about-me{
+
+  }
+.country-list {
+  list-style: georgian;
 }
-.lived {
-  margin: auto;
-  color: blue;
+.country-ordered-list{
+  color:#d60e0e
 }
-#title-me {
-  font-size: 150%
+.title-me {
+  font-size: 200%
   color: #d60e0e;
   border-style: solid;
   border-radius: 1px;
   text-align: center;
 }
-#skills-list {
+.skills {
+  text-decoration: underline;
+  color: #d60e0e;
+  font: weight:100;
+}
+.skills-list {
   width: 50%;
 }
-#lived-list {
+.lived-list {
   width: 50%;
 }
-#image-one {
+.lived {
+  margin: auto;
+  color: blue;
+}
+
+.image-one {
 
   text-align: center;
   border-style: solid;
   border-radius: 3px;
   width: 25%;
-}
-#top-ten-list{
-  color:#d60e0e
 }
