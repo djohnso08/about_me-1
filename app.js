@@ -11,16 +11,19 @@ function userNameFunction() {
 }
 userNameFunction();
 
-var hasDegree = prompt(userName + ' Do You Think I Have A College Degree?');
-console.log(hasDegree);
-if (hasDegree.toLowerCase() === 'y' || hasDegree.toLowerCase() === 'yes') {
-  alert('That Is Correct, I Have An Edumacation');
-  myScore++;
-}else if (hasDegree.toLowerCase() === 'n' || hasDegree.toLowerCase() === 'no'){
-  alert('BZZZZZZT WRONG!, Move Along.');
-}else {
-  alert('Answer Input Is Invalid');
+function hasDegreeFunction() {
+  var hasDegree = prompt(userName + ' Do You Think I Have A College Degree?');
+  console.log(hasDegree);
+  if (hasDegree.toLowerCase() === 'y' || hasDegree.toLowerCase() === 'yes') {
+    alert('That Is Correct, I Have An Edumacation');
+    myScore++;
+  }else if (hasDegree.toLowerCase() === 'n' || hasDegree.toLowerCase() === 'no'){
+    alert('BZZZZZZT WRONG!, Move Along.');
+  }else {
+    alert('Answer Input Is Invalid');
+  }
 }
+hasDegreeFunction();
 
 var isFather = prompt(userName + ' Do You Think Am I A Father?');
 console.log(isFather);
