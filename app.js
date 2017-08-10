@@ -67,16 +67,19 @@ function livedHawaiiFunction() {
 }
 livedHawaiiFunction();
 
-var challengeAccepted = prompt(userName + ' From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?');
-console.log(challengeAccepted);
-if (challengeAccepted === 'y' || challengeAccepted === 'yes') {
-  alert('I Think I Can, I Think I Can...I Know I Can.');
-  myScore++;
-}else if (challengeAccepted === 'n' || challengeAccepted === 'no') {
-  alert('Oh Thee Of So Little Faith...');
-}else {
-  alert('Answer Input Is Invalid');
+function challengeAcceptedFunction() {
+  var challengeAccepted = prompt(userName + ' From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?');
+  console.log(challengeAccepted);
+  if (challengeAccepted === 'y' || challengeAccepted === 'yes') {
+    alert('I Think I Can, I Think I Can...I Know I Can.');
+    myScore++;
+  }else if (challengeAccepted === 'n' || challengeAccepted === 'no') {
+    alert('Oh Thee Of So Little Faith...');
+  }else {
+    alert('Answer Input Is Invalid');
+  }
 }
+challengeAcceptedFunction();
 
 var placesLived = prompt ('Hey There! ' + userName + ' How Many Places Do You Think I Have Lived Besides Hawaii? You Have Four Guesses.');
 console.log(placesLived);
