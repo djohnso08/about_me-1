@@ -53,16 +53,19 @@ function militaryServiceFunction() {
 }
 militaryServiceFunction();
 
-var livedHawaii = prompt('Did I Ever Live In Hawaii?');
-console.log(livedHawaii);
-if (livedHawaii.toLowerCase() === 'y' || livedHawaii.toLowerCase() === 'yes') {
-  alert('Aloha! ' + userName + ' That Is Correct, I Even Speak Hawaiian Creole');
-  myScore++;
-}else if (livedHawaii.toLowerCase() === 'n' || livedHawaii.toLowerCase() === 'no') {
-  alert('As a matter of fact, I grew up there.');
-}else {
-  alert('Answer Input Is Invalid');
+function livedHawaiiFunction() {
+  var livedHawaii = prompt('Did I Ever Live In Hawaii?');
+  console.log(livedHawaii);
+  if (livedHawaii.toLowerCase() === 'y' || livedHawaii.toLowerCase() === 'yes') {
+    alert('Aloha! ' + userName + ' That Is Correct, I Even Speak Hawaiian Creole');
+    myScore++;
+  }else if (livedHawaii.toLowerCase() === 'n' || livedHawaii.toLowerCase() === 'no') {
+    alert('As a matter of fact, I grew up there.');
+  }else {
+    alert('Answer Input Is Invalid');
+  }
 }
+livedHawaiiFunction();
 
 var challengeAccepted = prompt(userName + ' From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?');
 console.log(challengeAccepted);
