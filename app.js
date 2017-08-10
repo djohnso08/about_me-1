@@ -98,20 +98,24 @@ function placesLivedFunction() {
     }
   }
 }
+placesLivedFunction();
 
-var bestVideoGames = ['skyrim', 'fallout', 'zelda', 'world of warcraft', 'wow', 'eve' ];
-var videoGamesPrint = bestVideoGames.join(', ');
-var userVideoGamePick = prompt('Oh.. hey! ' + userName + ' What Do You Think Is One Of The Best Video Games? You Have 6 Do Overs Before Game Over!');
-console.log(userVideoGamePick);
-for (var j = 0; j < 6; j++) {
-  if (bestVideoGames.includes(userVideoGamePick.toLowerCase())) {
-    alert('CORRECT! You Should Send A Friend Invite On Steam. By The Way I Kept Score. Your Options were ' + videoGamesPrint);
-    myScore++;
-    break;
-  }else if (bestVideoGames.includes(userVideoGamePick.toLowerCase()) === false) {
-    userVideoGamePick = prompt('Hey Dont Feel Bad Thats Why I Gave You 6 Lives.');
-  }else if (j === 6){
-    alert('GAME OVER' + videoGamesPrint + 'Were Your Options. Your Total Score Is ' + myScore);
+function bestVideoGamesFunction() {
+  var bestVideoGames = ['skyrim', 'fallout', 'zelda', 'world of warcraft', 'wow', 'eve' ];
+  var videoGamesPrint = bestVideoGames.join(', ');
+  var userVideoGamePick = prompt('Oh.. hey! ' + userName + ' What Do You Think Is One Of The Best Video Games? You Have 6 Do Overs Before Game Over!');
+  console.log(userVideoGamePick);
+  for (var j = 0; j < 6; j++) {
+    if (bestVideoGames.includes(userVideoGamePick.toLowerCase())) {
+      alert('CORRECT! You Should Send A Friend Invite On Steam. By The Way I Kept Score. Your Options were ' + videoGamesPrint);
+      myScore++;
+      break;
+    }else if (bestVideoGames.includes(userVideoGamePick.toLowerCase()) === false) {
+      userVideoGamePick = prompt('Hey Dont Feel Bad Thats Why I Gave You 6 Lives.');
+    }else if (j === 6){
+      alert('GAME OVER' + videoGamesPrint + 'Were Your Options. Your Total Score Is ' + myScore);
+    }
   }
+  alert('Your High Score Is... ' + myScore);
 }
-alert('Your High Score Is... ' + myScore);
+bestVideoGamesFunction();
