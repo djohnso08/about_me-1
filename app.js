@@ -1,51 +1,82 @@
 'use strict';
-var userName = prompt ('Pleaser Enter Your Name!')
+
+var myScore = 0;
+
+var userName = prompt ('Pleaser Enter Your Name!');
 console.log(userName);
 if (userName === true) {
-  alert('Thanks ' + userName + ', Let us begin. It is relatively painless.')
+  alert('Thanks ' + userName + ', Let us begin. It is relatively painless.');
 }
 
-var hasDegree = prompt(userName + ' Do You Think I Have A College Degree?')
+var hasDegree = prompt(userName + ' Do You Think I Have A College Degree?');
 console.log(hasDegree);
-if (hasDegree.toLowerCase(); === 'y' || hasDegree.toLowerCase(); === 'yes') {alert('That Is Correct, I Have An Edumacation');
-}else if (hasDegree.toLowerCase(); === 'n' || hasDegree.toLowerCase(); === 'no'){alert('BZZZZZZT WRONG!, Move Along.');
+if (hasDegree.toLowerCase() === 'y' || hasDegree.toLowerCase() === 'yes') {
+  alert('That Is Correct, I Have An Edumacation');
+  myScore++;
+}else if (hasDegree.toLowerCase() === 'n' || hasDegree.toLowerCase() === 'no'){
+  alert('BZZZZZZT WRONG!, Move Along.');
 }else {
   alert('Answer Input Is Invalid');
 }
-console.log(hasDegree);
 
-var isFather = prompt(userName + ' Do You Think Am I A Father?')
+var isFather = prompt(userName + ' Do You Think Am I A Father?');
 console.log(isFather);
-if (isFather.toLowerCase(); === 'y' || isFather.toLowerCase(); === 'yes') {alert('*Darth Vader Voice* Corrrect...');
-}else if (isFather.toLowerCase(); === 'n' || isFather.toLowerCase(); === 'no') {alert('*Darth Vader Voice* ' + userName ' I mean... Luuuke I Am A Father... I Do Have A Kid.');
+if (isFather.toLowerCase() === 'y' || isFather.toLowerCase() === 'yes') {
+  alert('*Darth Vader Voice* Corrrect...');
+  myScore++;
+}else if (isFather.toLowerCase() === 'n' || isFather.toLowerCase() === 'no') {
+  alert('*Darth Vader Voice* ' + userName + ' I mean... Luuuke I Am A Father... I Do Have A Kid.');
 }else {
   alert('Answer Input Is Invalid');
 }
-console.log(isFather);
 
-var militaryService = prompt(userName + ' Did I serve in the U.S. Military?')
+var militaryService = prompt(userName + ' Did I serve in the U.S. Military?');
 console.log(militaryService);
-if (militaryService.toLowerCase(); === 'y' || militaryService.toLowerCase(); === 'yes') {alert('AFFIRM! I Served In The Air Force.');
-}else if (militaryService.toLowerCase(); === 'n' || militaryService.toLowerCase(); === 'no') {alert('Big Ole Negatory, HUA!');
+if (militaryService.toLowerCase() === 'y' || militaryService.toLowerCase() === 'yes') {
+  alert('AFFIRM! I Served In The Air Force.');
+  myScore++;
+}else if (militaryService.toLowerCase() === 'n' || militaryService.toLowerCase() === 'no') {
+  alert('Big Ole Negatory, HUA!');
 }else {
   alert('Answer Input Is Invalid');
 }
-console.log(militaryService);
 
-var livedHawaii = prompt('Did I Ever Live In Hawaii?')
+var livedHawaii = prompt('Did I Ever Live In Hawaii?');
 console.log(livedHawaii);
-if (livedHawaii.toLowerCase(); === 'y' || livedHawaii.toLowerCase(); === 'yes') {alert('Aloha! ' + userName + ' That Is Correct, I Even Speak Hawaiian Creole');
-}else if (livedHawaii.toLowerCase(); === 'n' || livedHawaii.toLowerCase(); === 'no') {alert('As a matter of fact, I grew up there.');
+if (livedHawaii.toLowerCase() === 'y' || livedHawaii.toLowerCase() === 'yes') {
+  alert('Aloha! ' + userName + ' That Is Correct, I Even Speak Hawaiian Creole');
+  myScore++;
+}else if (livedHawaii.toLowerCase() === 'n' || livedHawaii.toLowerCase() === 'no') {
+  alert('As a matter of fact, I grew up there.');
 }else {
   alert('Answer Input Is Invalid');
 }
-console.log(livedHawaii);
 
-var challengeAccepted = prompt(userName + 'From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?')
+var challengeAccepted = prompt(userName + ' From What You Think You Know About Me, Am I Up For The Challenge Of Code Fellows!?');
 console.log(challengeAccepted);
-if (challengeAccepted === 'y' || challengeAccepted === 'yes') {alert('I Think I Can, I Think I Can...I Know I Can.');
-}else if (challengeAccepted === 'n' || challengeAccepted === 'no') {alert('Oh Thee Of So Little Faith...');
+if (challengeAccepted === 'y' || challengeAccepted === 'yes') {
+  alert('I Think I Can, I Think I Can...I Know I Can.');
+  myScore++;
+}else if (challengeAccepted === 'n' || challengeAccepted === 'no') {
+  alert('Oh Thee Of So Little Faith...');
 }else {
   alert('Answer Input Is Invalid');
 }
-console.log(challengeAccepted);
+
+var placesLived = prompt ('How Many Places Do You Think I Have Lived Besides Hawaii? You Have Four Guesses.');
+for (var i = 0; i < 4; i++) {
+  if (parseInt(placesLived) === 5) {
+    alert('It is True, I Have Moved A Lot.');
+    myScore++;
+    break;
+  }
+  else if (parseInt(placesLived) < 5) {
+    placesLived = prompt('I Have Lived In More Places, Please Try Again.');
+  }
+  else if (parseInt(placesLived) > 5) {
+    placesLived = prompt('WHOOOAAAAA....Slow Your Roll, Less Places Than That. Please Try Again.');
+  }else {
+    alert('You Ran Out Of Tries, Dont Feel Too Bad I am A Complicated Person.');
+  }
+}
+// 6 guesses for an array of answers then alert of the possible answers if they guessed right or wrong.
