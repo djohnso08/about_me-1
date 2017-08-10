@@ -20,8 +20,8 @@
   border-radius: 1px;
   text-align: center;
 }
-img {
-  display: block;
+#image-one {
+  text-align: center;
   border-style: solid;
   border-radius: 3px;
   width: 25%;

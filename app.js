@@ -80,7 +80,6 @@ for (var i = 0; i < 4; i++) {
   }
 }
 
-// 6 guesses for an array of answers then alert of the possible answers if they guessed right or wrong.
 var bestVideoGames = ['skyrim', 'fallout', 'zelda', 'world of warcraft', 'wow', 'eve' ];
 var userVideoGamePick = prompt('Oh.. hey! ' + userName + ' What Do You Think Is One Of The Best Video Games? You Have 6 Do Overs Before Game Over!');
 for (var j = 0; j < 6; j++) {
@@ -90,9 +89,9 @@ for (var j = 0; j < 6; j++) {
     break;
   }else if (bestVideoGames.includes(userVideoGamePick.toLowerCase()) === false) {
     userVideoGamePick = prompt('Hey Dont Feel Bad Thats Why I Gave You 6 Lives.');
-    continue;
   }else {
     alert('GAME OVER');
+    break;
   }
 }
 alert(bestVideoGames.toString());
