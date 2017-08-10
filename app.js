@@ -2,11 +2,14 @@
 
 var myScore = 0;
 
-var userName = prompt ('Please Enter Your Name!');
-console.log(userName);
-if (userName === true) {
-  alert('Thanks ' + userName + ', Let us begin. It is relatively painless.');
+function userNameFunction() {
+  var userName = prompt ('Please Enter Your Name!');
+  console.log(userName);
+  if (userName === true) {
+    alert('Thanks ' + userName + ', Let us begin. It is relatively painless.');
+  }
 }
+userNameFunction();
 
 var hasDegree = prompt(userName + ' Do You Think I Have A College Degree?');
 console.log(hasDegree);
